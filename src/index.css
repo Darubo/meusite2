@@ -29,19 +29,6 @@ nav ul li {
   margin: 0 10px;
 }
 
-nav ul li a:hover {
-  text-decoration: line-through;
-  text-decoration-thickness: 2px;
-}
-
-.nav-name {
-  font-family: "Migra", sans-serif;
-  color: #fff;
-  margin-right: 1.6rem;
-  margin-left: 1rem;
-  font-weight: 800;
-}
-
 main {
   padding: 20px;
 }
