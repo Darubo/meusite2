@@ -33,11 +33,6 @@ img {
   margin-left: auto;
 }
 
-.nav-bar {
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-
 .nav-bar .nav-container {
   display: flex;
   justify-content: space-between;
@@ -53,12 +48,12 @@ img {
 
 
 .nav-container li {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 
 .nav-container a {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
 }
@@ -72,24 +67,18 @@ img {
   content: "";
   position: absolute;
   bottom: -0.5px;
-  left: 0;
-  width: 0;
+  left: 50%;
+  width: 80%;
   height: 3px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
-}
-
-.nav-container li a:hover::before {
+  }
+  
+  .nav-container li a:hover::before {
   visibility: visible;
-  width: 100%;
-}
-
-
-header {
-  border: none;
-  border-bottom: 1px solid #400ebd;
-}
+  width: 90%;
+  }
 
 nav {
   display: flex;
@@ -193,8 +182,8 @@ nav a[data-hover="Contato"]:hover::before {
   
   .nav-name {
   font-family: "Migra", sans-serif;
-  font-size: 120%;
-  font-weight: 800;
+  font-size: 110%;
+  font-weight: 500;
   color: #fff;
   margin-right: 1.6rem;
   margin-left: -118rem;
@@ -217,4 +206,10 @@ nav a[data-hover="Contato"]:hover::before {
 
   .data-hover {
     float: right;
+  }
+
+  .line {
+    width: calc(100% - 59px);
+    margin-left: 19px;
+    margin-top: 50px;
   }

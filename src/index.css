@@ -3,18 +3,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-header {
-  border: none;
-  border-bottom: 1px solid #400ebd;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 nav a {
   color: #fff;
   text-decoration: none;
