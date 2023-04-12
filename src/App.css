@@ -222,3 +222,25 @@ nav a[data-hover="Contato"]:hover::before {
     margin-right: -166px;
   }
   
+  @font-face {
+    font-family: 'Monument';
+    src: url('PPMonumentExtended-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+  
+  h2 {
+    font-family: 'Monument', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    color: #fff;
+  }
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+.spacer {
+  height: 50vh;
+  background-color: #000;
+}
