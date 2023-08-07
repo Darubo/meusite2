@@ -1,7 +1,16 @@
-import './App.css';
-import backgroundImage from '../src/images/background.jpeg';
+import $ from 'jquery';
+import React, { useEffect } from "react";
+import "./App.css";
+import backgroundImage from "./images/UFMS.jpg";
 
 function App() {
+  useEffect(() => {
+    $(".name-label").click(() => {
+      $(".details-wrapper").toggleClass("open"); // adiciona ou remove a classe "open" na div "details-wrapper"
+      $(".background-image-wrapper").toggleClass("open"); // adiciona ou remove a classe "open" na div "background-image-wrapper"
+    });
+  }, []);
+
   return (
     <div className="App">
       <div className="background">

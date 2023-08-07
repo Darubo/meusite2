@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Geff 🤙</title>
+    <title>Portal LEDES</title>
+    <link rel="icon" href="./puzzle.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Migra&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,7 +14,9 @@
       <nav class="nav-bar">
         <hr class="line">
         <div class="nav-container">
-          <div class="nav-name">Gefferson Alves</div>
+          <div class="nav-logo">
+            <img src="./logo.ledes.png" alt="Logo LEDES">
+          </div>          
           <ul>
             <li><a href="#" data-hover="Home">home,</a></li>
             <li><a href="#" data-hover="Sobre">sobre,</a></li>
@@ -24,19 +28,19 @@
 
     <main>
       <section>
-        <h2 class="revealUp">Olá. <br> Eu sou o Geff</h2>
-        <p>Olá! Meu nome é Gefferson Alves e eu sou um desenvolvedor web.</p>
-      </section>
-    </main>
+        <h2 class="revealUp">Olá. <br> Bem Vindo ao <br> Portal do   LEDES</h2>
+          </div>
+
 
     <footer>
-      <p>&copy; 2023 Gefferson Alves</p>
+      <p>&copy; 2023 Faculdade de Computação, UFMS</p>
     </footer>
     <div id="root"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script>
+      
       gsap.registerPlugin(ScrollTrigger);
       gsap.utils.toArray(".revealUp").forEach(function (elem) {
         ScrollTrigger.create({
@@ -78,6 +82,10 @@
           }
         });
       });
+      $('.name-label').click(()=>{
+	$('.details-wrapper').toggleClass('open')
+	$('.background-image-wrapper').toggleClass('open')
+})
     </script>
   </body>
 </html>

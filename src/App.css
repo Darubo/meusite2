@@ -12,7 +12,7 @@
 }
 
 .background {
-  background-image: url("../src/images/background.jpeg");
+  background-image: url("../src/images/background.gif");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -55,7 +55,7 @@ img {
 .nav-container a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .nav-container li a {
